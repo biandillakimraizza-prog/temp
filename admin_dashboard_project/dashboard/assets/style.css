@@ -1,0 +1,123 @@
+/* assets/style.css — Industrial Admin Dashboard */
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow+Condensed:wght@400;700;900&family=Barlow:wght@300;400;500&display=swap');
+
+/* ── Root theme ── */
+:root {
+    --bg: #0a0c0f;
+    --surface: #111418;
+    --border: #1e2530;
+    --accent: #f0a500;
+    --success: #3ecf8e;
+    --warning: #f0a500;
+    --danger: #e05a5a;
+    --info: #4da6ff;
+    --text: #d4dbe8;
+    --muted: #5a6478;
+}
+
+/* ── Global overrides ── */
+html, body, [class*="css"] {
+    font-family: 'Barlow', sans-serif !important;
+    background-color: var(--bg) !important;
+    color: var(--text) !important;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #0d1014 !important;
+    border-right: 1px solid var(--border) !important;
+}
+
+section[data-testid="stSidebar"] .stSelectbox label,
+section[data-testid="stSidebar"] .stMultiSelect label,
+section[data-testid="stSidebar"] p {
+    color: var(--muted) !important;
+    font-family: 'Share Tech Mono', monospace !important;
+    font-size: 0.72rem !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+}
+
+/* Metric cards */
+[data-testid="metric-container"] {
+    background: #111418 !important;
+    border: 1px solid #1e2530 !important;
+    border-top: 2px solid var(--accent) !important;
+    padding: 1rem 1.25rem !important;
+    border-radius: 0 !important;
+}
+
+[data-testid="metric-container"] [data-testid="stMetricValue"] {
+    font-family: 'Barlow Condensed', sans-serif !important;
+    font-size: 2.2rem !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+}
+
+[data-testid="metric-container"] [data-testid="stMetricLabel"] {
+    font-family: 'Share Tech Mono', monospace !important;
+    font-size: 0.65rem !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+    color: var(--muted) !important;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Barlow Condensed', sans-serif !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+}
+
+/* Divider */
+hr {
+    border-color: var(--border) !important;
+    margin: 1.5rem 0 !important;
+}
+
+/* Alert / error box */
+.stAlert {
+    border-radius: 0 !important;
+    border-left: 3px solid var(--danger) !important;
+    background: rgba(224,90,90,0.08) !important;
+    font-family: 'Share Tech Mono', monospace !important;
+    font-size: 0.8rem !important;
+}
+
+.stSuccess {
+    border-left: 3px solid var(--success) !important;
+    background: rgba(62,207,142,0.08) !important;
+}
+
+/* Buttons */
+.stButton button {
+    background: transparent !important;
+    border: 1px solid var(--accent) !important;
+    color: var(--accent) !important;
+    font-family: 'Share Tech Mono', monospace !important;
+    font-size: 0.7rem !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+    border-radius: 0 !important;
+    padding: .4rem 1rem !important;
+}
+
+.stButton button:hover {
+    background: var(--accent) !important;
+    color: #000 !important;
+}
+
+/* Dataframe */
+.stDataFrame {
+    border: 1px solid var(--border) !important;
+}
+
+/* Select boxes */
+.stSelectbox > div > div {
+    background: #111418 !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 0 !important;
+    color: var(--text) !important;
+}

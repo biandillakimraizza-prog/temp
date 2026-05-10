@@ -69,7 +69,7 @@ admin_dashboard_project/
 
 ## Quickstart
 
-### 1. Clone / set up the project
+### 1. Set up the project
 
 ```bash
 cd admin_dashboard_project
